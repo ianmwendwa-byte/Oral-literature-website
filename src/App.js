@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Introduction from './Components/Introduction';
+import { Route, Routes } from 'react-router-dom';
+import TongueTwisters from './Components/TongueTwisters';
+import Narratives from './Components/Narratives';
+import Riddles from './Components/Riddles';
+import Proverbs from './Components/Proverbs';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+  <Routes>
+    <Route path='/' element={<Introduction/>}/>
+    <Route path='/tonguetwister' element={<TongueTwisters/>}/>
+    <Route path='/narratives' element={<Narratives/>}/>
+    <Route path='/riddles' element={<Riddles/>}/>
+    <Route path='/proverbs' element={<Proverbs/>}/>
+  </Routes>
+    
     </div>
   );
 }
