@@ -36,7 +36,7 @@ const handleChange=(event)=>{
 </svg>
 </button>
 </form>
-<div  className='absolute z-50 top-12  bg-white w-full shadow-lg '>
+<div  className='absolute z-30 top-12  bg-white w-full shadow-lg '>
 <ul className='m-4'>
   {searchRes.narratives && searchRes.narratives.map((narrative, index) => (
     <li key={index} className="text-lg"><h3 className='text-red-500'>{narrative.Subtopic}</h3>
@@ -111,7 +111,7 @@ const handleChange=(event)=>{
 </svg>
 
       </nav>
-      <div className='bg-purple-50  absolute top-0  w-3/4 z-20 h-full transition-all ease-in-out ' style={{right:burger?'0px':'-5120px'}}>
+      <div className='bg-purple-50  absolute top-0  w-3/4 z-50 h-full transition-all ease-in-out ' style={{right:burger?'0px':'-5120px'}}>
         <div className='flex justify-end mr-5 mt-4 '>
       <svg   onClick={()=>{
         setBurger(false)
