@@ -9,7 +9,7 @@ import Proverbs from './Components/Proverbs';
 
 function App() {
   return (
-    <div>
+    <div className='min-h-full overflow-hidden'>
   <Routes>
     <Route path='/' element={<Introduction/>}/>
     <Route path='/tonguetwister' element={<TongueTwisters/>}/>

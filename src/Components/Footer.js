@@ -15,13 +15,13 @@ function Footer() {
     <div className="text-center mb-4 lg:mb-0">
       <h4 className="text-xl font-bold">Follow Us</h4>
       <div className="flex justify-center lg:justify-start mt-2">
-        <Link to="#" class="text-white hover:text-purple-800 mx-2">
+        <Link to="https://www.facebook.com/profile.php?id=100069819055712" class="text-white hover:text-purple-800 mx-2">
         <FacebookIcon/>
         </Link>
-        <Link to="#" class="text-white hover:text-purple-800 mx-2">
+        <Link to="https://twitter.com/W_A_NJIRU?t=NaTK2I3e3L2GNsz-SWMwKQ&s=09" class="text-white hover:text-purple-800 mx-2">
         <TwitterIcon/>
         </Link>
-        <Link to="#" class="text-white hover:text-purple-800 mx-2">
+        <Link to="https://instagram.com/j._wanjiru?igshid=ZGUzMzM3NWJiOQ==" class="text-white hover:text-purple-800 mx-2">
        <InstagramIcon/>
         </Link>
       </div>

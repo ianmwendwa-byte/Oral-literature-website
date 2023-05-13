@@ -4,7 +4,7 @@ import Footer from './Footer';
 import { Paper } from '@mui/material';
 import { Link } from 'react-router-dom';
 // loader
-import CircleLoader from "react-spinners/CircleLoader";
+import { DotLoader } from 'react-spinners';
 
 function Introduction() {
   const [isLoading,setIsLoading] =useState();
@@ -19,15 +19,15 @@ useEffect(()=>{
 
   return (
     <div>
-      {isLoading ? <div className='flex  flex-col justify-center items-center bg-purple-600 min-h-screen'> <CircleLoader
-        color={'#fff'}
+      {isLoading ? <div className='flex  flex-col justify-center items-center bg-white min-h-screen'> <DotLoader 
+        color={'#a855f7'}
         loading={isLoading}
-        size={200}
+        size={80}
         aria-label="Loading Spinner"
         data-testid="loader"
        
       />
-      <h1 className='text-white text-xl'>Please wait ....</h1>
+      <h1 className='text-purple-600 text-xl'>Please wait ....</h1>
        </div>
         :
     <div>

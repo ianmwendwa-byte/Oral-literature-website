@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom'
 function MainContent(props) {
 
   return (
-    <section className='ml-5 mt-5 w-full mr-5 '>
+    <section className='ml-5 mt-5 w-full lg:w-3/4 mr-5 '>
       <Paper elevation={3}>
         {/* title starts */}
         <div>
-          <h1 className='text-5xl font-bold p-2 font-sans text-center'>{props.title}</h1>
+          <h1 className='text-2xl font-bold p-2 font-sans text-center text-gray-800'>{props.title}</h1>
         </div>
         {/* title ends */}
-        <div className='p-4'>
+        <div className='p-4 text-gray-800'>
           {props.body}
         </div>
    <div className='flex justify-between'>
